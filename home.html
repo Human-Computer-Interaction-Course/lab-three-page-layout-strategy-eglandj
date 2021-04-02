@@ -10,9 +10,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <style>
-            .grid_item1 { grid-area: header; }
-            .grid_item2 { grid-area: main; }
-            .grid_item3 { grid-area: footer; }
+            header { grid-area: header; }
+            main { grid-area: main; }
+            footer { grid-area: footer; }
             #container{
                 display: grid;
                 grid-template: 105px auto 15% / 1fr 1fr 1fr;
@@ -34,10 +34,7 @@
                 flex-basis: 325px;
                 height: 350px;
                 padding: 10px;
-                margin-top: 4%;
-                margin-bottom: 4%;
-                margin-left: 2%;
-                margin-right: 2%;
+                margin: 4% 2% 4%;
                 background-color: #ffffffcf;
                 border-radius: 10px;
             }
@@ -47,14 +44,15 @@
                 width: 100%;
                 background-image: url("./img/dog_bg.jpeg");
                 background-position: center;
-                background-size: 100%;
+                background-size: cover;
             }
             body{
                 font-family: 'Montserrat', sans-serif;
                 margin: 0;
             }
-            footer{
+            #copyright{
                 width: 275px;
+                padding: 40px;
                 margin: auto;
             }
         
@@ -62,10 +60,10 @@
     </head>
     <body>
         <div id="container">
-            <header class="grid_item1">
+            <header>
                 <img id="dog_logo" src="./img/mpls_dog_logo.png" alt="Minneapolis Dog Logo">
             </header>
-            <main class="grid_item2" id="flexcontainer">
+            <main id="flexcontainer">
                 <aside class="flex_item">
                     <h2>About Us</h2>
                     <p>Quality dog care service - The luxury hotel for dogs!</p>
@@ -93,9 +91,8 @@
                     </ul>
                 </aside>
             </main>
-            <footer class="grid_item3">
+            <footer>
                 <div id="copyright">	&#169;  2019 - 2023 MPLS Dogboarding</div>
             </footer>
         </div>
     </body>
-</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MPLS Dogboarding </title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Dog Boarding in Minneapoli">
+        <meta name="keywords" content="Dog boarding, Minneapolis, dog, quality, ">
+        <meta name="author" content="Andrew Egle">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .item1 { grid-area: header; }
+            .item2 { grid-area: main; }
+            .item3 { grid-area: footer; }
+            #container{
+                display: grid;
+                grid-template: 105px auto 15% / 1fr 1fr 1fr;
+                grid-template-areas: 
+                    'header header header'
+                    'main main main'
+                    'footer footer footer';
+                width: 100vw;
+                height: 100vh;
+            }
+            #dog_logo{
+                display: block;
+                width: 20%;
+                margin: auto;
+            }
+            #flexcontainer{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                background-image: url("/img/dog_bg.jpeg");
+            }
+        
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <header class="item1">
+                <img id="dog_logo" src="/img/mpls_dog_logo.png" alt="Minneapolis Dog Logo">
+            </header>
+            <main class="item2" id="flexcontainer">
+                <aside>
+                    <h2>About Us</h2>
+                    <p>Quality dog care service - The luxury hotel for dogs!</p>
+                </aside>
+                <aside>
+                    <h2>Price</h2>
+                    <h3>Weekly Boarding</h3>
+                    <p>$425 - 7 days [24 hours from drop-off time] </li>
+                    <h3>Daily Rate: </h3>
+                    <p>$75 - 1 day [24 hours from drop-off time</p>
+                    
+                    </ul>
+                </aside>
+                <aside>
+                    <h2>Hours of Operation</h2>
+                    <ul>
+                        <li>Monday: - 7am - 6pm</li>
+                        <li>Tuesday: - 7am - 6pm</li>
+                        <li>Wednesday: - 7am - 6pm</li>
+                        <li>Thursday: 7am - 6pm</li>
+                        <li>Friday:</li>
+                    </ul>
+                </aside>
+            </main>
+            <footer class="item3">
+                <div id="copyright">	&#169;  2019 - 2023 MPLS Dogboarding</div>
+            </footer>
+        </div>
+    </body>
+</html>

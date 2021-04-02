@@ -1,16 +1,18 @@
 <!DOCTYPE html>
+<!-- Andrew Egle - Lab 3-->
 <html>
     <head>
         <title>MPLS Dogboarding </title>
         <meta charset="UTF-8">
-        <meta name="description" content="Dog Boarding in Minneapoli">
+        <meta name="description" content="Dog Boarding in Minneapolis">
         <meta name="keywords" content="Dog boarding, Minneapolis, dog, quality, ">
         <meta name="author" content="Andrew Egle">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <style>
-            .item1 { grid-area: header; }
-            .item2 { grid-area: main; }
-            .item3 { grid-area: footer; }
+            .grid_item1 { grid-area: header; }
+            .grid_item2 { grid-area: main; }
+            .grid_item3 { grid-area: footer; }
             #container{
                 display: grid;
                 grid-template: 105px auto 15% / 1fr 1fr 1fr;
@@ -26,46 +28,72 @@
                 width: 20%;
                 margin: auto;
             }
+            .flex_item{
+                flex-grow: 1;
+                flex-shrink: 0;
+                flex-basis: 325px;
+                height: 350px;
+                padding: 10px;
+                margin-top: 4%;
+                margin-bottom: 4%;
+                margin-left: 2%;
+                margin-right: 2%;
+                background-color: #ffffffcf;
+                border-radius: 10px;
+            }
             #flexcontainer{
                 display: flex;
                 flex-wrap: wrap;
                 width: 100%;
-                background-image: url("/img/dog_bg.jpeg");
+                background-image: url("./img/dog_bg.jpeg");
+                background-position: center;
+                background-size: 100%;
+            }
+            body{
+                font-family: 'Montserrat', sans-serif;
+                margin: 0;
+            }
+            footer{
+                width: 275px;
+                margin: auto;
             }
         
         </style>
     </head>
     <body>
         <div id="container">
-            <header class="item1">
-                <img id="dog_logo" src="/img/mpls_dog_logo.png" alt="Minneapolis Dog Logo">
+            <header class="grid_item1">
+                <img id="dog_logo" src="./img/mpls_dog_logo.png" alt="Minneapolis Dog Logo">
             </header>
-            <main class="item2" id="flexcontainer">
-                <aside>
+            <main class="grid_item2" id="flexcontainer">
+                <aside class="flex_item">
                     <h2>About Us</h2>
                     <p>Quality dog care service - The luxury hotel for dogs!</p>
+                    <p>Serving the MPLS are for well over 10 years!</p>
                 </aside>
-                <aside>
+                <aside class="flex_item">
                     <h2>Price</h2>
                     <h3>Weekly Boarding</h3>
-                    <p>$425 - 7 days [24 hours from drop-off time] </li>
+                    <p>$425 - 7 days [24 hours from drop-off time] </p>
                     <h3>Daily Rate: </h3>
-                    <p>$75 - 1 day [24 hours from drop-off time</p>
-                    
-                    </ul>
+                    <p>$75 - 1 day [24 hours from drop-off time]</p>
                 </aside>
-                <aside>
+                <aside class="flex_item">
                     <h2>Hours of Operation</h2>
                     <ul>
-                        <li>Monday: - 7am - 6pm</li>
-                        <li>Tuesday: - 7am - 6pm</li>
-                        <li>Wednesday: - 7am - 6pm</li>
+                        <li>Monday: 7am - 6pm</li>
+                        <li>Tuesday: 7am - 6pm</li>
+                        <li>Wednesday: 7am - 6pm</li>
                         <li>Thursday: 7am - 6pm</li>
-                        <li>Friday:</li>
+                        <li>Friday: 7am - 6pm</li>
+                    </ul>
+                    <h3>Weekend Hours</h3>
+                    <ul>
+                        <li>Saturday and Sunday: 1pm - 9pm</li>
                     </ul>
                 </aside>
             </main>
-            <footer class="item3">
+            <footer class="grid_item3">
                 <div id="copyright">	&#169;  2019 - 2023 MPLS Dogboarding</div>
             </footer>
         </div>
